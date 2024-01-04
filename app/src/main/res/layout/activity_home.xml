@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Home"
+    android:background="@color/colorBackground"
+    android:orientation="vertical">
+
+    <View
+        android:id="@+id/view"
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:background="@color/colorPrimary"
+        />
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="25dp"
+        android:layout_marginTop="15dp">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </LinearLayout>
+
+    <androidx.core.widget.NestedScrollView
+        android:id="@+id/nestedScrollView"
+        android:layout_width="match_parent"
+
+
+        android:layout_height="match_parent">
+
+
+        <RelativeLayout
+            android:layout_width="340dp"
+            android:layout_height="450dp"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="200dp"
+            android:layout_marginEnd="35dp">
+
+            <TextView
+                android:layout_width="160dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/findvaccine"
+                android:layout_marginStart="15dp"
+                android:layout_marginTop="15dp"
+                android:text="Find Vaccine"
+                android:textSize="25dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="160dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/Information"
+                android:layout_marginTop="15dp"
+                android:text="      Settings"
+                android:textSize="25dp"
+                android:textStyle="bold" />
+
+
+            <TextView
+                android:layout_width="160dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/userprofile"
+                android:layout_marginStart="215dp"
+                android:layout_marginTop="25dp"
+                android:text="Profile"
+                android:textSize="25dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="160dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/Information"
+                android:layout_marginStart="192dp"
+                android:layout_marginTop="15dp"
+                android:text="Information"
+                android:textSize="25dp"
+                android:textStyle="bold" />
+
+            <ImageButton
+                android:id="@+id/Settings"
+                android:layout_width="160dp"
+                android:layout_height="160dp"
+                android:layout_below="@id/findvaccine"
+                android:layout_marginStart="0dp"
+                android:layout_marginTop="70dp"
+                android:background="@drawable/settings" />
+
+
+            <ImageButton
+                android:id="@+id/findvaccine"
+                android:layout_width="150dp"
+                android:layout_height="140dp"
+                android:layout_marginStart="15dp"
+                android:background="@drawable/findvaccine"
+
+                />
+
+
+            <ImageButton
+                android:id="@+id/userprofile"
+                android:layout_width="130dp"
+                android:layout_height="130dp"
+                android:layout_marginStart="190dp"
+                android:background="@drawable/userprofile"
+
+                />
+
+            <ImageButton
+                android:id="@+id/Information"
+                android:layout_width="160dp"
+                android:layout_height="150dp"
+                android:layout_below="@+id/userprofile"
+                android:layout_marginStart="185dp"
+                android:layout_marginTop="80dp"
+                android:background="@drawable/covidinform" />
+
+
+        </RelativeLayout>
+
+
+    </androidx.core.widget.NestedScrollView>
+
+
+    <com.google.android.material.bottomappbar.BottomAppBar
+        android:id="@+id/bottomappbar"
+        android:layout_width="match_parent"
+        android:layout_gravity="bottom"
+        android:layout_height="50dp"
+        app:backgroundTint="@color/colorAccent"
+
+        />
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_share"
+        app:backgroundTint="@color/colorPrimary"
+        android:id="@+id/btn"
+        app:layout_anchor="@+id/bottomappbar"/>
+
+    <ImageView
+        android:layout_width="244dp"
+        android:layout_height="210dp"
+        android:background="@drawable/homeee"
+        app:layout_anchor="@+id/linearLayout"
+        app:layout_anchorGravity="center" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="285dp"
+        android:layout_height="266dp"
+        app:layout_anchor="@+id/nestedScrollView"
+        app:layout_anchorGravity="center"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.35">
+
+        <ImageView
+            android:id="@+id/nointernet"
+            android:layout_width="142dp"
+            android:layout_height="150dp"
+            android:background="@drawable/internetalert"
+            android:visibility="gone"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.496"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/nointernettxt"
+            android:layout_width="141dp"
+            android:layout_height="23dp"
+            android:text="NO INTERNET"
+            android:textColor="@color/black"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:visibility="gone"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.498"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/nointernet"
+            app:layout_constraintVertical_bias="0.0" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

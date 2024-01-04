@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardCornerRadius="6dp"
+    app:cardElevation="6dp"
+    app:cardUseCompatPadding="true">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="400dp"
+        android:padding="15dp"
+        >
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/img1"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_centerHorizontal="true"
+            android:src="@mipmap/ic_launcher"
+            app:border_color="#FF000000"
+            app:border_width="2dp" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Name"
+            android:id="@+id/name"
+            android:textStyle="normal"
+            android:textSize="25sp"
+            android:textColor="#000"
+            android:layout_below="@id/img1"
+            />
+
+        <TextView
+            android:id="@+id/state"
+            android:layout_width="1dp"
+            android:layout_height="1dp"
+            android:textColor="@color/white"
+            android:textSize="25sp"
+            android:textStyle="normal" />
+        <TextView
+            android:id="@+id/district"
+            android:layout_width="1dp"
+            android:layout_height="1dp"
+            android:textColor="@color/white"
+            android:textSize="25sp"
+            android:textStyle="normal" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Date"
+            android:id="@+id/date"
+            android:textStyle="normal"
+            android:layout_below="@id/name"
+            android:textSize="25sp"
+            android:textColor="#000"
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Time"
+            android:id="@+id/time"
+            android:textStyle="normal"
+            android:layout_below="@id/date"
+            android:textSize="25sp"
+            android:textColor="#000"
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Contact"
+            android:id="@+id/contact"
+            android:textStyle="normal"
+            android:layout_below="@id/time"
+            android:textSize="25sp"
+            android:textColor="#000"
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Address"
+            android:id="@+id/address"
+            android:textStyle="normal"
+            android:layout_below="@id/contact"
+            android:textSize="25sp"
+            android:textColor="#000"
+            />
+
+
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>

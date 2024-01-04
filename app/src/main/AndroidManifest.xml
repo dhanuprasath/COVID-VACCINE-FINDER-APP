@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.covidvaccine">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/findvaccine"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/findvaccine"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.COVIDVACCINE">
+        <activity android:name=".Settings"></activity>
+        <activity android:name=".search" />
+        <activity android:name=".EditProfile" />
+        <activity android:name=".Information" />
+        <activity android:name=".Select" />
+        <activity android:name=".Home" />
+        <activity android:name=".profile" />
+        <activity android:name=".Login" />
+        <activity android:name=".Register">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

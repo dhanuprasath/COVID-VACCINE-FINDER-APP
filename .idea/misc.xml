@@ -1,0 +1,28 @@
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/Android Studio/COVIDVACCINE/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.1" />
+        <entry key="..\:/Android Studio/COVIDVACCINE/app/src/main/res/layout/activity_edit_profile.xml" value="0.15601851851851853" />
+        <entry key="..\:/Android Studio/COVIDVACCINE/app/src/main/res/layout/activity_home.xml" value="0.15601851851851853" />
+        <entry key="..\:/Android Studio/COVIDVACCINE/app/src/main/res/layout/activity_information.xml" value="0.15601851851851853" />
+        <entry key="..\:/Android Studio/COVIDVACCINE/app/src/main/res/layout/activity_login.xml" value="0.22" />
+        <entry key="..\:/Android Studio/COVIDVACCINE/app/src/main/res/layout/activity_profile.xml" value="0.16666666666666666" />
+        <entry key="..\:/Android Studio/COVIDVACCINE/app/src/main/res/layout/activity_register.xml" value="0.22" />
+        <entry key="..\:/Android Studio/COVIDVACCINE/app/src/main/res/layout/activity_search.xml" value="0.13858695652173914" />
+        <entry key="..\:/Android Studio/COVIDVACCINE/app/src/main/res/layout/activity_select.xml" value="0.15601851851851853" />
+        <entry key="..\:/Android Studio/COVIDVACCINE/app/src/main/res/layout/activity_settings.xml" value="0.1" />
+        <entry key="..\:/Android Studio/COVIDVACCINE/app/src/main/res/layout/imageviewcardview.xml" value="0.15601851851851853" />
+        <entry key="..\:/Android Studio/COVIDVACCINE/app/src/main/res/layout/main_item.xml" value="0.15601851851851853" />
+        <entry key="..\:/Android Studio/COVIDVACCINE/app/src/main/res/layout/spinner_layout.xml" value="0.15601851851851853" />
+        <entry key="..\:/Android Studio/COVIDVACCINE/app/src/main/res/menu/search.xml" value="0.15601851851851853" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" project-jdk-name="Android API 31 Platform" project-jdk-type="Android SDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>

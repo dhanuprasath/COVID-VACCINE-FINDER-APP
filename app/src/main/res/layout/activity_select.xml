@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/home"
+    tools:context=".Select">
+
+
+    <TextView
+        android:id="@+id/textView_indian_states"
+        android:layout_width="250dp"
+        android:layout_height="35dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="83dp"
+        android:layout_marginTop="314dp"
+        android:layout_marginEnd="69dp"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:padding="6dp"
+        android:text="State"
+        android:textColor="@color/black"
+        android:textSize="20dp"
+        android:textStyle="bold" />
+
+    <Spinner
+        android:id="@+id/spinner_indian_states"
+        android:layout_width="250dp"
+        android:layout_height="35dp"
+        android:layout_below="@id/textView_indian_states"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:background="@color/white"
+        android:layout_marginStart="83dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="73dp" />
+
+    <TextView
+        android:id="@+id/textView_indian_districts"
+        android:layout_width="250dp"
+        android:layout_height="35dp"
+        android:layout_below="@id/spinner_indian_states"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="83dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="77dp"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:textSize="20dp"
+        android:padding="6dp"
+        android:text="District"
+        android:textColor="@color/black"
+        android:textStyle="bold"/>
+
+    <Spinner
+        android:id="@+id/spinner_indian_districts"
+        android:layout_width="250dp"
+        android:layout_height="35dp"
+        android:layout_below="@id/textView_indian_districts"
+        android:layout_alignParentStart="true"
+        android:background="@color/white"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="83dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="78dp" />
+
+    <Button
+        android:id="@+id/button_submit"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:layout_below="@id/spinner_indian_districts"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="48dp"
+        android:layout_marginBottom="137dp"
+        android:text="submit"
+        android:textAlignment="center" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/floatingActionButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textView_indian_districts"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="170dp"
+        android:onClick="backselect"
+        android:src="@drawable/ic_back"
+        app:backgroundTint="@color/colorPrimary" />
+
+
+
+
+
+</RelativeLayout>

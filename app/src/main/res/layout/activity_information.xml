@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Information">
+
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/floatingActionButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="650dp"
+        android:onClick="backinformation"
+        android:src="@drawable/ic_back"
+        app:backgroundTint="@color/colorPrimary" />
+
+    <androidx.core.widget.NestedScrollView
+        android:id="@+id/nes"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginEnd="13dp"
+            android:layout_marginStart="13dp">
+
+            <ImageView
+                android:id="@+id/txt"
+                android:layout_width="278dp"
+                android:layout_height="260dp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/txt" />
+
+        <TextView
+            android:id="@+id/txt1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="COVID-19 vaccines: everything you need to know"
+            android:textSize="40dp"
+            android:layout_below="@id/txt"
+            android:textStyle="italic"
+            android:textColor="@color/black"
+            />
+
+            <TextView
+                android:id="@+id/txt2"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@+id/txt1"
+                android:layout_marginTop="10dp"
+                android:text="         Accurate, evidence-based information about COVID-19 vaccines to provide people with essential facts about the vaccines that will help end this crisis."
+                android:textSize="30dp"
+                android:textStyle="normal" />
+            <TextView
+                android:id="@+id/txt3"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="Understanding How COVID-19 Vaccines Work"
+                android:textSize="40dp"
+                android:layout_below="@id/txt2"
+                android:textStyle="italic"
+                android:textColor="@color/black"
+                />
+
+            <ImageView
+                android:id="@+id/txt4"
+                android:layout_width="209dp"
+                android:layout_height="192dp"
+                android:layout_below="@id/txt3"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="30dp"
+                android:background="@drawable/txtt" />
+            <TextView
+                android:id="@+id/txt5"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="What You Need to Know"
+                android:textSize="40dp"
+                android:layout_marginTop="10dp"
+                android:layout_below="@id/txt4"
+                android:textStyle="italic"
+                android:textColor="@color/black"
+                />
+            <TextView
+                android:id="@+id/txt6"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="         * COVID-19 vaccines are safe and effective.You may have side effects after vaccination, but these are normal.It typically takes two weeks after you are fully vaccinated for the body to build protection (immunity) against the virus that causes COVID-19.If you are not vaccinated, find a vaccine. Keep taking all precautions until you are fully vaccinated.If you are fully vaccinated, you can resume activities that you did prior to the pandemic. Learn more about what you can do when you have been fully vaccinated."
+                android:textSize="30dp"
+                android:layout_marginTop="10dp"
+                android:layout_below="@id/txt5"
+                android:textStyle="italic"
+                />
+            <TextView
+                android:id="@+id/txt8"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="The Immune System—the Body’s Defense Against Infection"
+                android:textSize="40dp"
+                android:layout_marginTop="10dp"
+                android:layout_below="@id/txt7"
+                android:textStyle="italic"
+                android:textColor="@color/black"
+                />
+            <TextView
+                android:id="@+id/txt10"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="          * Macrophages"
+                android:textSize="30dp"
+                android:layout_marginTop="10dp"
+                android:layout_below="@id/txt9"
+                android:textStyle="italic"
+                android:textColor="@color/black"
+                />
+            <TextView
+                android:id="@+id/txt11"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="          * B-lymphocytes"
+                android:textSize="30dp"
+                android:layout_marginTop="10dp"
+                android:layout_below="@id/txt10"
+                android:textStyle="italic"
+                android:textColor="@color/black"
+                />
+            <TextView
+                android:id="@+id/txt12"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="          * T-lymphocytes"
+                android:textSize="30dp"
+                android:layout_marginTop="10dp"
+                android:layout_below="@id/txt11"
+                android:textStyle="italic"
+                android:textColor="@color/black"
+                />
+            <TextView
+                android:id="@+id/txt13"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="  The first time a person is infected with the virus that causes COVID-19, it can take several days or weeks for their body to make and use all the germ-fighting tools needed to get over the infection. After the infection, the person’s immune system remembers what it learned about how to protect the body against that disease.
+
+The body keeps a few T-lymphocytes, called “memory cells,” that go into action quickly if the body encounters the same virus again. When the familiar antigens are detected, B-lymphocytes produce antibodies to attack them. Experts are still learning how long these memory cells protect a person against the virus that causes COVID-19."
+                android:textSize="30dp"
+                android:layout_marginTop="10dp"
+                android:layout_below="@id/txt12"
+                android:textStyle="italic"/>
+
+            <ImageView
+                android:id="@+id/txt7"
+                android:layout_width="209dp"
+                android:layout_height="192dp"
+                android:layout_below="@id/txt6"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="30dp"
+                android:background="@drawable/txttt" />
+
+            <TextView
+                android:id="@+id/txt9"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="         To understand how COVID-19 vaccines work, it helps to first look at how our bodies fight illness. When germs, such as the virus that causes COVID-19, invade our bodies, they attack and multiply. This invasion, called an infection, is what causes illness. Our immune system uses several tools to fight infection. Blood contains red cells, which carry oxygen to tissues and organs, and white or immune cells, which fight infection. Different types of white blood cells fight infection in different ways:"
+                android:textSize="30dp"
+                android:layout_marginTop="10dp"
+                android:layout_below="@id/txt8"
+                android:textStyle="italic"
+                />
+
+
+       </RelativeLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+
+</RelativeLayout>
